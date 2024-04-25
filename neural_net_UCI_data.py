@@ -59,6 +59,6 @@ nn = NeuralNet(13, 3, 1)
 nn.train(train, iters=1000, print_interval=100, learning_rate=0.1)
 
 for i in nn.test_with_expected(test):
-    difference = round(abs(i[1][0]-1[2][0]),3)
+    difference = round(abs(i[1][0] - i[2][0]), 3)
     print(f"desired: {i[1]}, actual: {i[2]} diff: {difference}")
 
